@@ -355,7 +355,7 @@ export default function RiskAssessmentPage() {
             <Card className="mt-8 border-t-4 border-t-blue-600">
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  Results for {address}, {zipCode}
+                  Results for {result.propertyAddress}, {zipCode}
                   <span className={`text-lg ${risk.color}`}>{risk.level} Risk</span>
                 </CardTitle>
                 <CardDescription>Based on our predictive models and available data</CardDescription>
