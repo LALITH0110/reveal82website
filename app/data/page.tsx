@@ -101,24 +101,6 @@ export default function DataPage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="md:col-span-2 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Lead Levels by Neighborhood</CardTitle>
-                  <LineChart className="h-4 w-4 text-muted-foreground" />
-                </CardHeader>
-                <CardContent>
-                  <div className="mt-4 h-[300px] w-full bg-gray-100 rounded-md flex items-center justify-center">
-                    <iframe
-                        src="/lead_map2.html"
-                        className="w-full h-full rounded-md"
-                        style={{minHeight: "300px", border: "none"}}
-                    ></iframe>
-                  </div>
-                  <p className="mt-4 text-sm text-muted-foreground">
-                    Our spatial analysis shows significant variation in lead levels across Chicago neighborhoods.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
 
             <div className="prose max-w-none">
