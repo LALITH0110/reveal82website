@@ -57,13 +57,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
-                  name: "Eileen Garay",
-                  role: "Co-Leader",
+                  name: "Eileen Garay ",
+                  role: "Co-Leader / Statistical team",
                   skills: "RStudio, Python, Data Mining, Data visualization, Machine Learning",
                 },
                 {
                   name: "Virginia Reider",
-                  role: "Leader / Statistical Lead",
+                  role: "Co-Leader / Statistical Lead",
                   skills: "RStudio, Statistical Analysis, Regression Modeling, Data Visualizations, Ethical Analysis",
                 },
                 {
@@ -78,12 +78,12 @@ export default function AboutPage() {
                 },
                 {
                   name: "Elijah Perez",
-                  role: "ML / Data Optimization",
+                  role: "Data Optimization / ML ",
                   skills: "ML, Linear Algebra, Data Handling",
                 },
                 {
                   name: "Lalith Kothuru",
-                  role: "Data Fusion / Back-end / ML",
+                  role: "Full-Stack Developer / ML",
                   skills: "Full-stack, ML, Data Scraping",
                 },
               ].map((member, index) => (
