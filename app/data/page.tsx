@@ -34,7 +34,7 @@ export default function DataPage() {
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Cool stuff by Virginia</CardTitle>
+                  <CardTitle className="text-sm font-medium">Predictions for when It violates new lead and copper rule</CardTitle>
                   <BarChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
@@ -43,14 +43,28 @@ export default function DataPage() {
                     of Chicago households are estimated to have lead levels above the EPA's proposed 10ppb limit
                   </p>
                   <div className="mt-4 h-[180px] w-full bg-gray-100 rounded-md flex items-center justify-center">
-                    <span className="text-sm text-gray-500">Chart visualization would appear here</span>
+                    <iframe
+                        src="/pic.html"
+                        loading="lazy"
+                        className="w-full h-full rounded-md"
+                        style={{minHeight: "300px", border: "none"}}
+                    ></iframe>
+                  </div>
+                  <div className="mt-40 h-[180px] w-full bg-gray-100 rounded-md flex items-center justify-center">
+                    <iframe
+                        src="/pic2.html"
+                        loading="lazy"
+                        className="w-full h-full rounded-md"
+                        style={{minHeight: "300px", border: "none"}}
+                    ></iframe>
                   </div>
                 </CardContent>
+
               </Card>
 
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Cool stuff by Raj</CardTitle>
+                  <CardTitle className="text-sm font-medium">XGBoost Model Prediction Accuracy</CardTitle>
                   <PieChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
@@ -76,17 +90,39 @@ export default function DataPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="mt-4 h-[300px] w-full bg-gray-100 rounded-md flex items-center justify-center">
-                    <span className="text-sm text-gray-500">Map visualization would appear here <br></br> (I want to add other groups project here)</span>
+                    <iframe
+                        src="/pic3.html"
+                        className="w-full h-full rounded-md"
+                        style={{minHeight: "300px", border: "none"}}
+                    ></iframe>
                   </div>
                   <p className="mt-4 text-sm text-muted-foreground">
-                    Our spatial analysis shows significant variation in lead levels across Chicago neighborhoods, blah blah blah.
+                    Our spatial analysis shows significant variation in lead levels across Chicago neighborhoods.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="md:col-span-2 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Lead Levels by Neighborhood</CardTitle>
+                  <LineChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <div className="mt-4 h-[300px] w-full bg-gray-100 rounded-md flex items-center justify-center">
+                    <iframe
+                        src="/lead_map2.html"
+                        className="w-full h-full rounded-md"
+                        style={{minHeight: "300px", border: "none"}}
+                    ></iframe>
+                  </div>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    Our spatial analysis shows significant variation in lead levels across Chicago neighborhoods.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="prose max-w-none">
-              <h3>Key Insights</h3>
+            <h3>Key Insights</h3>
               <ul>
                 <li>
                   <strong>Property Age Correlation:</strong> Homes built before 1986 have a significantly higher
