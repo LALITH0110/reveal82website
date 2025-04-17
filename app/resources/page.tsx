@@ -32,6 +32,20 @@ export default function ResourcesPage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <Card>
+                <CardHeader>
+                  <CardTitle>Use Filters</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Consider using a water filter certified to remove lead. Look for filters that are NSF/ANSI Standard
+                    53 certified for lead reduction. Remember to replace filter cartridges according to manufacturer
+                    instructions.
+                  </p>
+                </CardContent>
+              </Card>
+              
               <Card>
                 <CardHeader>
                   <CardTitle>Use Cold Water</CardTitle>
@@ -64,19 +78,6 @@ export default function ResourcesPage() {
                   <p>
                     Regularly clean faucet aerators to remove lead particles that may become trapped in the screen.
                     Simply unscrew the aerator, rinse out any debris, and reattach.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Use Filters</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    Consider using a water filter certified to remove lead. Look for filters that are NSF/ANSI Standard
-                    53 certified for lead reduction. Remember to replace filter cartridges according to manufacturer
-                    instructions.
                   </p>
                 </CardContent>
               </Card>
