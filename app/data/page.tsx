@@ -24,7 +24,7 @@ export default function DataPage() {
 
           <TabsContent value="findings" className="space-y-6 pt-4">
             <div className="prose max-w-none">
-              <h2>Key Findings</h2>
+              <h2>Key Findings of Statistics team</h2>
               <p>
                 Our analysis of Chicago's lead service lines and water testing data has revealed several important
                 findings:
@@ -34,47 +34,16 @@ export default function DataPage() {
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Predictions for when It violates new lead and copper rule</CardTitle>
-                  <BarChart className="h-4 w-4 text-muted-foreground" />
-                </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold">42.3%</div>
-                  <p className="text-xs text-muted-foreground">
-                    of Chicago households are estimated to have lead levels above the EPA's proposed 10ppb limit
-                  </p>
-                  <div className="mt-4 h-[180px] w-full bg-gray-100 rounded-md flex items-center justify-center">
-                    <iframe
-                        src="/pic.html"
-                        loading="lazy"
-                        className="w-full h-full rounded-md"
-                        style={{minHeight: "300px", border: "none"}}
-                    ></iframe>
-                  </div>
-                  <div className="mt-40 h-[180px] w-full bg-gray-100 rounded-md flex items-center justify-center">
-                    <iframe
-                        src="/pic2.html"
-                        loading="lazy"
-                        className="w-full h-full rounded-md"
-                        style={{minHeight: "300px", border: "none"}}
-                    ></iframe>
-                  </div>
-                </CardContent>
-
-              </Card>
-
-              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">XGBoost Model Prediction Accuracy</CardTitle>
+                  <CardTitle className="text-sm font-medium">Bootstrapping techniques</CardTitle>
                   <PieChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">76.8%</div>
                   <p className="text-xs text-muted-foreground">
-                    accuracy in predicting service line composition using our machine learning models
+                  Using bootstrapping techniques, 31 wards violate the 10ppb policy, as compared to 15ppb only 1 did. Chicago must take immediate action.​
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
-                      src="Raj_pic.png"
+                      src="virg4.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
@@ -83,24 +52,122 @@ export default function DataPage() {
                 </CardContent>
               </Card>
 
-              <Card className="md:col-span-2 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Logistic Regression</CardTitle>
+                  <PieChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs text-muted-foreground">
+                  Factors like age and land sq feet are significant and increase your probability of having a lead draw over 10ppb. Bedrooms and white percentage are significant and decreased it.
+                  </p>
+                  <div className="mt-4 w-full flex items-center justify-center">
+                    <img
+                      src="virg5.png"
+                      alt="Feature Correlation Matrix showing relationships between property characteristics"
+                      className="w-full h-auto rounded-md shadow-sm"
+                    />
+                  </div>
+
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Survival Analysis</CardTitle>
+                  <PieChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs text-muted-foreground">
+                  According to survival analysis, it takes an average of 7 liter draws of water to reach 10ppb. Residents must take more draws of water than current policy.​
+                  </p>
+                  <div className="mt-4 w-full flex items-center justify-center">
+                    <img
+                      src="virg7.png"
+                      alt="Feature Correlation Matrix showing relationships between property characteristics"
+                      className="w-full h-auto rounded-md shadow-sm"
+                    />
+                  </div>
+
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Logistic Regression</CardTitle>
+                  <PieChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs text-muted-foreground">
+                  The magnitude of the effect of these variables differs by neighborhood, using logistic regression.​​ 
+                  </p>
+                  <div className="mt-4 w-full flex items-center justify-center">
+                    <img
+                      src="virg3.png"
+                      alt="Feature Correlation Matrix showing relationships between property characteristics"
+                      className="w-full h-auto rounded-md shadow-sm"
+                    />
+                  </div>
+
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Predictions for when It violates new lead and copper rule</CardTitle>
+                  <BarChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <div className="w-full">
+                    <iframe
+                        src="/Private_SR.html"
+                        loading="lazy"
+                        className="w-full h-[350px] rounded-lg"
+                        style={{border: "none"}}
+                        title="Lead and copper rule violations prediction map"
+                    ></iframe>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Predictions for when It violates new lead and copper rule</CardTitle>
+                  <BarChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <div className="w-full">
+                    <iframe
+                        src="/Private_SR.html"
+                        loading="lazy"
+                        className="w-full h-[350px] rounded-lg"
+                        style={{border: "none"}}
+                        title="Lead and copper rule violations prediction map"
+                    ></iframe>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* <Card className="md:col-span-2 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">Spatial Regression for 90th Percentile of Max Lead Draw​</CardTitle>
                   <LineChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="mt-4 h-[300px] w-full bg-gray-100 rounded-md flex items-center justify-center">
+                  <div className="w-full">
                     <iframe
                         src="/pic3.html"
-                        className="w-full h-full rounded-md"
-                        style={{minHeight: "300px", border: "none"}}
+                        title="Spatial regression map"
+                        loading="lazy"
+                        className="w-full h-[350px] rounded-lg"
+                        style={{border: "none"}}
                     ></iframe>
                   </div>
                   <p className="mt-4 text-sm text-muted-foreground">
                     Our spatial analysis shows significant variation in lead levels across Chicago neighborhoods.
                   </p>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
 
             <div className="prose max-w-none">
