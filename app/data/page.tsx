@@ -248,7 +248,26 @@ export default function DataPage() {
                       className="w-full h-auto rounded-md shadow-sm"
                     />
                   </div>
+                </CardContent>
+              </Card>
 
+
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Selecting Best Addresses for Testing</CardTitle>
+                  <PieChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs text-muted-foreground">
+                  Estimate uncertainty using k-NN to prioritize addresses where models are most uncertain and cluster using k-Means.
+                  </p>
+                  <div className="mt-4 w-full flex items-center justify-center">
+                    <img
+                      src="ml1.png"
+                      alt="Feature Correlation Matrix showing relationships between property characteristics"
+                      className="w-full h-auto rounded-md shadow-sm"
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
@@ -268,7 +287,6 @@ export default function DataPage() {
                       className="w-full h-auto rounded-md shadow-sm"
                     />
                   </div>
-
                 </CardContent>
               </Card>
 
@@ -288,7 +306,6 @@ export default function DataPage() {
                       className="w-full h-auto rounded-md shadow-sm"
                     />
                   </div>
-
                 </CardContent>
               </Card>
 
@@ -308,7 +325,6 @@ export default function DataPage() {
                       className="w-full h-auto rounded-md shadow-sm"
                     />
                   </div>
-
                 </CardContent>
               </Card>
 
