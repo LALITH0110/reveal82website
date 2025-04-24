@@ -16,7 +16,7 @@ export default function DataPage() {
         </div>
 
         <Tabs defaultValue="findings" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="findings">Statistics Team Key Findings</TabsTrigger>
             <TabsTrigger value="findings-2">Machine Learning Team Key Findings</TabsTrigger>
             <TabsTrigger value="methodology">Methodology</TabsTrigger>
