@@ -170,6 +170,16 @@ export default function ResourcesPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
+                  <div className="w-full max-w-3xl ml-0 mr-auto">
+                    <video controls width="100%">
+                      <source src="water2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div> </div>
+                  </div>
+                  
+                  <div className="space-y-4">
                     <p>Proper sample collection is crucial for accurate results. Follow these steps:</p>
                     <ol className="list-decimal list-inside space-y-2">
                       <li>Select a faucet that is commonly used for drinking water (usually the kitchen sink).</li>
