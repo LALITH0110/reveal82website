@@ -469,6 +469,17 @@ export default function DataPage() {
                   <strong>Confusion Matrices:</strong> To visualize true positives, false positives, true negatives, and
                   false negatives.
                 </li>
+                <li>
+                  <strong>Precision, Recall, and F1 Scores:</strong> To balance the trade-off between false positives
+                  and false negatives.
+                </li>
+                <li>
+                  <strong>ROC Curves and AUC:</strong> To assess model discrimination ability.
+                </li>
+                <li>
+                  <strong>Spatial Validation:</strong> To ensure models performed consistently across different
+                  geographic areas of Chicago.
+                </li>
               </ul>
 
               <h3>Addressing Bias</h3>
@@ -477,6 +488,18 @@ export default function DataPage() {
                 <li>
                   <strong>Ethical Review:</strong> We conducted an ethical review of our methodology and results to
                   identify and address potential biases.
+                </li>
+                <li>
+                  <strong>Data Debiasing:</strong> We used bootstrapping methods to ensure equal representation of all
+                  neighborhoods and demographic groups.
+                </li>
+                <li>
+                  <strong>Feature Selection:</strong> We carefully selected features to avoid reinforcing historical
+                  patterns of discrimination.
+                </li>
+                <li>
+                  <strong>Transparency:</strong> We documented limitations and uncertainties in our models to ensure
+                  responsible interpretation of results.
                 </li>
               </ul>
             </div>
@@ -534,7 +557,14 @@ export default function DataPage() {
                   <strong>Chicago Data Portal:</strong> Information on city infrastructure, ward boundaries, and
                   historical data.
                 </li>
-                
+                <li>
+                  <strong>Historical Plumbing Codes:</strong> Information on building regulations and plumbing standards
+                  over time.
+                </li>
+                <li>
+                  <strong>Public Health Data:</strong> Reported cases of lead poisoning by neighborhood (anonymized and
+                  aggregated).
+                </li>
               </ul>
 
               <h3>Data Processing</h3>
