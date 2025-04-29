@@ -33,6 +33,25 @@ export default function DataPage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
+            <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Logistic Regression</CardTitle>
+                  <PieChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs text-muted-foreground">
+                  The magnitude of the effect of these variables differs by neighborhood, using logistic regression.​​ 
+                  </p>
+                  <div className="mt-4 w-full flex items-center justify-center">
+                    <img
+                      src="virg3.png"
+                      alt="Feature Correlation Matrix showing relationships between property characteristics"
+                      className="w-full h-auto rounded-md shadow-sm"
+                    />
+                  </div>
+
+                </CardContent>
+              </Card>
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">Bootstrapping techniques</CardTitle>
@@ -45,26 +64,6 @@ export default function DataPage() {
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
                       src="virg4.png"
-                      alt="Feature Correlation Matrix showing relationships between property characteristics"
-                      className="w-full h-auto rounded-md shadow-sm"
-                    />
-                  </div>
-
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Logistic Regression</CardTitle>
-                  <PieChart className="h-4 w-4 text-muted-foreground" />
-                </CardHeader>
-                <CardContent>
-                  <p className="text-xs text-muted-foreground">
-                  Factors like age and land sq feet are significant and increase your probability of having a lead draw over 10ppb. Bedrooms and white percentage are significant and decreased it.
-                  </p>
-                  <div className="mt-4 w-full flex items-center justify-center">
-                    <img
-                      src="virg5.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
@@ -100,11 +99,11 @@ export default function DataPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-xs text-muted-foreground">
-                  The magnitude of the effect of these variables differs by neighborhood, using logistic regression.​​ 
+                  Factors like age and land sq feet are significant and increase your probability of having a lead draw over 10ppb. Bedrooms and white percentage are significant and decreased it.
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
-                      src="virg3.png"
+                      src="virg5.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
@@ -112,6 +111,8 @@ export default function DataPage() {
 
                 </CardContent>
               </Card>
+
+              
 
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
