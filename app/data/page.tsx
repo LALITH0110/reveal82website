@@ -88,7 +88,6 @@ export default function DataPage() {
                       className="w-full h-auto rounded-md shadow-sm"
                     />
                   </div>
-
                 </CardContent>
               </Card>
 
@@ -108,7 +107,6 @@ export default function DataPage() {
                       className="w-full h-auto rounded-md shadow-sm"
                     />
                   </div>
-
                 </CardContent>
               </Card>
 
@@ -317,7 +315,7 @@ export default function DataPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-xs text-muted-foreground">
-                  The magnitude of the effect of these variables differs by neighborhood, using logistic regression.​​ 
+                  The most important features that RandomForest used to predict service line composition. Property age (38-40 years) was most common split, aligning with the 1986 federal lead pipe ban.
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
