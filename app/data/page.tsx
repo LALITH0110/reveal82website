@@ -44,7 +44,7 @@ export default function DataPage() {
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
-                      src="virg3.png"
+                      src="virg5.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
@@ -63,7 +63,7 @@ export default function DataPage() {
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
-                      src="virg4.png"
+                      src="virg3.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
@@ -102,7 +102,7 @@ export default function DataPage() {
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
-                      src="virg5.png"
+                      src="virg4.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
