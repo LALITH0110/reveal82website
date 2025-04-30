@@ -148,6 +148,24 @@ export default function DataPage() {
                 </CardContent>
               </Card>
 
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className="text-sm font-medium">Predicted 90th percentile by Neighborhood</CardTitle>
+                  <BarChart className="h-4 w-4 text-muted-foreground" />
+                </CardHeader>
+                <CardContent>
+                  <div className="w-full">
+                    <iframe
+                        src="/pic34.html"
+                        loading="lazy"
+                        className="w-full h-[350px] rounded-lg"
+                        style={{border: "none"}}
+                        title="Lead and copper rule violations prediction map"
+                    ></iframe>
+                  </div>
+                </CardContent>
+              </Card>
+
               {/* <Card className="md:col-span-2 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">Spatial Regression for 90th Percentile of Max Lead Draw​</CardTitle>
