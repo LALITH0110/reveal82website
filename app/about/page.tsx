@@ -27,32 +27,62 @@ export default function AboutPage() {
                 {
                   name: "Eileen Garay ",
                   role: "Co-Leader / Statistical team",
-                  skills: "RStudio, Python, Data Mining, Data visualization, Machine Learning",
+                  skills: (
+                    <>
+                      RStudio, Python, Data Mining, Data visualization, Machine Learning<br />
+                      <strong>egaray@hawk.iit.edu</strong>
+                    </>
+                  ),
                 },
                 {
                   name: "Virginia Reider",
                   role: "Co-Leader / Statistical Lead",
-                  skills: "RStudio, Statistical Analysis, Regression Modeling, Data Visualizations, Ethical Analysis",
+                  skills: (
+                    <>
+                      RStudio, Statistical Analysis, Regression Modeling, Data Visualizations, Ethical Analysis<br />
+                      <strong>vreider@hawk.iit.edu</strong>
+                    </>
+                  ),
                 },
                 {
                   name: "Rajan Savani",
                   role: "Spokesperson / ML Lead",
-                  skills: "ML, RStudio, Exploratory Data Analysis, Linear Algebra",
+                  skills: (
+                    <>
+                      ML, RStudio, Exploratory Data Analysis, Linear Algebra<br />
+                      <strong>rsavani@hawk.iit.edu</strong>
+                    </>
+                  ),
                 },
                 {
                   name: "Austin Samuel",
                   role: "Data Wrangler / ML",
-                  skills: "Data Scraping, Visualization, ML, Langchain",
+                  skills: (
+                    <>
+                      Data Scraping, Visualization, ML, Langchain<br />
+                      <strong>asamuel5@hawk.iit.edu</strong>
+                    </>
+                  ),
                 },
                 {
                   name: "Elijah Perez",
                   role: "Data Optimization / ML ",
-                  skills: "ML, Linear Algebra, Data Handling",
+                  skills: (
+                    <>
+                      ML, Linear Algebra, Data Handling<br />
+                      <strong>eperez36@hawk.iit.edu</strong>
+                    </>
+                  ),
                 },
                 {
                   name: "Lalith Kothuru",
                   role: "Full-Stack Developer / ML",
-                  skills: "Full-stack, ML, Data Scraping",
+                  skills: (
+                    <>
+                      Full-stack, ML, Data Scraping<br />
+                      <strong>lkothuru@hawk.iit.edu</strong>
+                    </>
+                  ),
                 },
               ].map((member, index) => (
                 <Card key={index} className="shadow-md hover:shadow-lg transition-shadow duration-300">
