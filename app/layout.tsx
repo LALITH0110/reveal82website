@@ -21,20 +21,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* VG Overlay container */}
+        {/* VG Overlay container for TIXAE Chatbot */}
         <div style={{ width: 0, height: 0 }} id="VG_OVERLAY_CONTAINER" />
 
-        {/* External Chatbot Script */}
+        {/* Chatbot Script */}
         <Script id="vg-chatbot" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `
             (function() {
               window.VG_CONFIG = {
-                ID: "5KEF7O5jlPkNhB1UvouY", // Your new agent ID
+                ID: "9GMglRUMhoFtrBi1YtvD", // Your TIXAE Agent ID
                 region: 'na',
                 render: 'bottom-right',
                 stylesheets: [
                   "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css"
                 ]
+                // modalMode: true, // uncomment if you want modal
+                // autostart: true, // uncomment if you want auto start
               };
               var VG_SCRIPT = document.createElement("script");
               VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
@@ -53,8 +55,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
-
-
-import './globals.css'
