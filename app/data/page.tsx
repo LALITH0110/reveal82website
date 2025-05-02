@@ -251,12 +251,12 @@ export default function DataPage() {
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Bootstrapping techniques</CardTitle>
+                  <CardTitle className="text-sm font-medium">Dataset Label Distribution by Township</CardTitle>
                   <PieChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <p className="text-xs text-muted-foreground">
-                  Using bootstrapping techniques, 31 wards violate the 10ppb policy, as compared to 15ppb only 1 did. Chicago must take immediate action.​
+                  The Chicago Service Line Inventory shows uneven label distribution across townships, with some neighborhoods far better reprsented than others. This can impact model accuracy and testing priorities.
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
@@ -290,12 +290,12 @@ export default function DataPage() {
 
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Logistic Regression</CardTitle>
+                  <CardTitle className="text-sm font-medium">Model Performance</CardTitle>
                   <PieChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <p className="text-xs text-muted-foreground">
-                  Factors like age and land sq feet are significant and increase your probability of having a lead draw over 10ppb. Bedrooms and white percentage are significant and decreased it.
+                  Model precision was prioritized to minimize false negatives (incorrectly predicting a line as not lead when it is could lead to prolonged exposure).
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
@@ -309,12 +309,12 @@ export default function DataPage() {
 
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Survival Analysis</CardTitle>
+                  <CardTitle className="text-sm font-medium">ROC Curves</CardTitle>
                   <PieChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <p className="text-xs text-muted-foreground">
-                  According to survival analysis, it takes an average of 7 liter draws of water to reach 10ppb. Residents must take more draws of water than current policy.​
+                  Decision tree-based models (XGBoost, Random Forest) outperformed Neural Networks with leading AUC scores exceeding 94%.
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
@@ -328,7 +328,7 @@ export default function DataPage() {
 
               <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Logistic Regression</CardTitle>
+                  <CardTitle className="text-sm font-medium">Feature Importance</CardTitle>
                   <PieChart className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
@@ -337,7 +337,7 @@ export default function DataPage() {
                   </p>
                   <div className="mt-4 w-full flex items-center justify-center">
                     <img
-                      src="4.png"
+                      src="41.png"
                       alt="Feature Correlation Matrix showing relationships between property characteristics"
                       className="w-full h-auto rounded-md shadow-sm"
                     />
