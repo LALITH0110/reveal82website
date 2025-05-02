@@ -14,45 +14,13 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <Tabs defaultValue="problem" className="w-full">
+        <Tabs defaultValue="team" className="w-full">
           <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="problem">The Problem</TabsTrigger>
             <TabsTrigger value="team">Our Team</TabsTrigger>
+            <TabsTrigger value="problem">The Problem</TabsTrigger>
             <TabsTrigger value="methodology">Methodology</TabsTrigger>
             <TabsTrigger value="ethics">Ethical Considerations</TabsTrigger>
           </TabsList>
-          <TabsContent value="problem" className="space-y-4 pt-4">
-            <div className="prose max-w-none">
-              <h2>Chicago's Lead Service Line Crisis</h2>
-              <p>
-                Chicago has the most lead service lines of any city in the United States, with approximately 400,000
-                still in use today. This is a direct result of the city's 1937 plumbing code, which mandated the use of
-                lead pipes for service lines until the EPA banned lead pipes in 1986.
-              </p>
-              <p>
-                Lead is a well-documented neurotoxin that is harmful to all people, with no safe level of exposure.
-                Despite this knowledge, Chicago residents continue to be exposed to lead through their drinking water
-                due to these aging lead service lines.
-              </p>
-              <h3>Key Issues:</h3>
-              <ul>
-                <li>No amount of lead is safe for human consumption</li>
-                <li>The city only labels unknown service lines as "Suspected Lead," without providing risk levels</li>
-                <li>Many residents rely on limited water testing data that doesn't fully assess exposure risk</li>
-                <li>Lead exposure disproportionately affects low-income communities and communities of color</li>
-              </ul>
-              <p>
-                The EPA's Lead and Copper Rule currently sets the action level at 15 parts per billion (ppb), though the
-                proposed revision would lower this to 10 ppb. However, it's important to note that the allowable limit
-                for lead in bottled water is only 5 ppb.
-              </p>
-            </div>
-            <div className="flex justify-center mt-6">
-              <Link href="/risk-assessment">
-                <Button className="bg-blue-600 hover:bg-blue-700">Check Your Risk</Button>
-              </Link>
-            </div>
-          </TabsContent>
           <TabsContent value="team" className="space-y-4 pt-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -134,6 +102,39 @@ export default function AboutPage() {
               </div>
             </div>
           </TabsContent>
+          <TabsContent value="problem" className="space-y-4 pt-4">
+            <div className="prose max-w-none">
+              <h2>Chicago's Lead Service Line Crisis</h2>
+              <p>
+                Chicago has the most lead service lines of any city in the United States, with approximately 400,000
+                still in use today. This is a direct result of the city's 1937 plumbing code, which mandated the use of
+                lead pipes for service lines until the EPA banned lead pipes in 1986.
+              </p>
+              <p>
+                Lead is a well-documented neurotoxin that is harmful to all people, with no safe level of exposure.
+                Despite this knowledge, Chicago residents continue to be exposed to lead through their drinking water
+                due to these aging lead service lines.
+              </p>
+              <h3>Key Issues:</h3>
+              <ul>
+                <li>No amount of lead is safe for human consumption</li>
+                <li>The city only labels unknown service lines as "Suspected Lead," without providing risk levels</li>
+                <li>Many residents rely on limited water testing data that doesn't fully assess exposure risk</li>
+                <li>Lead exposure disproportionately affects low-income communities and communities of color</li>
+              </ul>
+              <p>
+                The EPA's Lead and Copper Rule currently sets the action level at 15 parts per billion (ppb), though the
+                proposed revision would lower this to 10 ppb. However, it's important to note that the allowable limit
+                for lead in bottled water is only 5 ppb.
+              </p>
+            </div>
+            <div className="flex justify-center mt-6">
+              <Link href="/risk-assessment">
+                <Button className="bg-blue-600 hover:bg-blue-700">Check Your Risk</Button>
+              </Link>
+            </div>
+          </TabsContent>
+          
           <TabsContent value="methodology" className="space-y-4 pt-4">
             <div className="prose max-w-none">
               <h2>Our Approach</h2>
