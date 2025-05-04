@@ -24,6 +24,20 @@ export default function RootLayout({
         {/* VG Overlay container for TIXAE Chatbot */}
         <div style={{ width: 0, height: 0 }} id="VG_OVERLAY_CONTAINER" />
 
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-G3ELJ6J5WZ"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-G3ELJ6J5WZ');
+          `}
+        </Script>
+
         {/* Chatbot Script */}
         <Script id="vg-chatbot" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `
