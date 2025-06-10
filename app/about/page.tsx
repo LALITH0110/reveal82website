@@ -56,10 +56,10 @@ export default function AboutPage() {
                 },
                 {
                   name: "Austin Samuel",
-                  role: "Data Wrangler / ML",
+                  role: "Full Stack / Data Wrangler / ML",
                   skills: (
                     <>
-                      Data Scraping, Visualization, ML, Langchain<br />
+                      Full-Stack, Front-End, Data Scraping, Visualization, ML, Langchain<br />
                       <strong>asamuel5@hawk.iit.edu</strong>
                     </>
                   ),
