@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import Script from "next/script"; // ✨ used for chatbot script
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,50 +22,60 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* VG Overlay container for TIXAE Chatbot */}
-        <div style={{ width: 0, height: 0 }} id="VG_OVERLAY_CONTAINER" />
-
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-G3ELJ6J5WZ"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="force-light-theme" strategy="beforeInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-G3ELJ6J5WZ');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            localStorage.setItem('theme', 'light');
+            document.cookie = 'theme=light; path=/;';
           `}
         </Script>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          {/* VG Overlay container for TIXAE Chatbot */}
+          <div style={{ width: 0, height: 0 }} id="VG_OVERLAY_CONTAINER" />
 
-        {/* Chatbot Script */}
-        <Script id="vg-chatbot" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              window.VG_CONFIG = {
-                ID: "9GMglRUMhoFtrBi1YtvD", // Your TIXAE Agent ID
-                region: 'na',
-                render: 'bottom-right',
-                stylesheets: [
-                  "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css"
-                ]
-                // modalMode: true, // uncomment if you want modal
-                // autostart: true, // uncomment if you want auto start
-              };
-              var VG_SCRIPT = document.createElement("script");
-              VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
-              VG_SCRIPT.defer = true;
-              document.body.appendChild(VG_SCRIPT);
-            })();
-          `
-        }} />
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-G3ELJ6J5WZ"
+            strategy="afterInteractive"
+          />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-G3ELJ6J5WZ');
+            `}
+          </Script>
 
-        {/* App Layout */}
-        <div className="flex min-h-screen flex-col">
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-        </div>
+          {/* Chatbot Script */}
+          <Script id="vg-chatbot" strategy="afterInteractive" dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                window.VG_CONFIG = {
+                  ID: "9GMglRUMhoFtrBi1YtvD", // Your TIXAE Agent ID
+                  region: 'na',
+                  render: 'bottom-right',
+                  stylesheets: [
+                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css"
+                  ]
+                  // modalMode: true, // uncomment if you want modal
+                  // autostart: true, // uncomment if you want auto start
+                };
+                var VG_SCRIPT = document.createElement("script");
+                VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+                VG_SCRIPT.defer = true;
+                document.body.appendChild(VG_SCRIPT);
+              })();
+            `
+          }} />
+
+          {/* App Layout */}
+          <div className="flex min-h-screen flex-col">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
